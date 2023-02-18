@@ -1,0 +1,1 @@
+dosbox -fullscreen -c 'mount c /opt/games/doom' -c 'c:' -c 'DOOM.EXE'

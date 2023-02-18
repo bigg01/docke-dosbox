@@ -17,5 +17,6 @@ WORKDIR /opt/games
 EXPOSE 8080
 # copy config file
 COPY ./dosbox.conf /app/conf.d/
+COPY ./startgame.sh /
 
-USER 1001
+#USER 1001
