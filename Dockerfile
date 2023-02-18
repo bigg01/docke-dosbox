@@ -11,4 +11,4 @@ ENV RUN_XTERM=no \
 # intall packages
 RUN PKGS="dosbox" apt-get install -y ${PKGS} && rm -rfv /var/lib/apt/lists/*
 # copy config file
-COPY dosbox.conf /app/conf.d/
+COPY ./dosbox.conf /app/conf.d/
