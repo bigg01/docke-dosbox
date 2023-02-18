@@ -9,7 +9,7 @@ ENV RUN_XTERM=no \
   DISPLAY_WIDTH=1024 \
   DISPLAY_HEIGHT=768
 # intall packages
-RUN apt-get update && \
+RUN apt-get update -y && \
   apt-get install -y dosbox && \
   rm -rfv /var/lib/apt/lists/*
 # copy config file
