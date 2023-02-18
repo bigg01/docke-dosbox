@@ -13,4 +13,4 @@ RUN apt-get update -y && \
   apt-get install -y dosbox && \
   rm -rfv /var/lib/apt/lists/*
 # copy config file
-#COPY ./dosbox.conf /app/conf.d/
+COPY ./dosbox.conf /app/conf.d/
