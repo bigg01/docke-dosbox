@@ -9,7 +9,6 @@ ENV RUN_XTERM=no \
     DISPLAY_WIDTH=1024 \
     DISPLAY_HEIGHT=768
 # intall packages
-RUN PKGS="dosbox" && \  
-    apt-get install -y ${PKGS} && rm -rfv /var/lib/apt/lists/*
+RUN PKGS="dosbox" apt-get install -y ${PKGS} && rm -rfv /var/lib/apt/lists/*
 # copy config file
 COPY dosbox.conf /app/conf.d/
