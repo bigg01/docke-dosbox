@@ -11,6 +11,11 @@ ENV RUN_XTERM=no \
 # intall packages
 RUN apt-get update -y && \
   apt-get install -y dosbox && \
-  rm -rfv /var/lib/apt/lists/*
+  rm -rfv /var/lib/apt/lists/* && mkdir /opt/games && chown -R 1001:1001 /opt/games
+WORKDIR /opt/games
+#NoVNC runs on 8080
+EXPOSE 8080
 # copy config file
 COPY ./dosbox.conf /app/conf.d/
+
+USER 1001
