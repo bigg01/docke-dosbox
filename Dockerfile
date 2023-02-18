@@ -1,5 +1,5 @@
 # https://github.com/bigg01/docker-dosbox.git
-FROM ghcr.io/bigg01/docker-novnc:sha256-6f7d705b91c4f680e6957b80b5d01f1617cbfcb85f667a0936118246bc8712ee.sig
+FROM ghcr.io/bigg01/docker-novnc:master
 # set labels for metadata
 LABEL maintainer="Oliver Guggenbuehl<info@containerize.ch>" \
   name="dosbox" \
